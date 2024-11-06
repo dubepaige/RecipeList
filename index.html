@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>Collecting Recipes</title>
+</head>
+<body>
+    <h1>Collecting Recipes</h1>
+    
+    <div>
+        <label for="email">Your email: </label>
+        <input type="text" id="email" name="email">
+    </div>
+    <div>
+        <label for="date">Today's date: </label>
+        <input type="date" id="date" name="date">
+    </div>
+    <div>
+        <p>What ingredients are in your recipe?</p>
+        <input type="checkbox" id="fruit" name="fruit">
+        <label for="fruit">Fruit</label>
+        <p></p>
+        <input type="checkbox" id="vegetables" name="vegetables">
+        <label for="vegetables">Vegetables</label>
+        <p></p>
+        <input type="checkbox" id="Grains" name="grains">
+        <label for="grains">Grains</label>
+        <p></p>
+        <input type="checkbox" id="dairy" Dame="dairy">
+        <label for="dairy">Dairy</label>   
+    </div>
+    <div>
+        <label for="type">What type of recipe is this? </label>
+        <select name="type" id="type">
+        <option value="Dessert">Dessert</option>
+        <option value="Appetizer">Appetizer</option>
+        <option value="Entree">Entree</option>
+        <option value="Drinks">Drinks</option>
+        </select>
+    </div>
+    <div>
+        <button onclick="addRecipe()">Add to recipes</button>
+    </div>
+
+    <div>
+        <ul id="reply">
+        </ul>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
